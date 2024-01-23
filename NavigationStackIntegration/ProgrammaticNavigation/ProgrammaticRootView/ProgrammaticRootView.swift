@@ -17,7 +17,7 @@ struct ProgrammaticRootView: View {
             List {
                 Section(content: {
                     ForEach(viewModel.exampleSentences.prefix(4), id: \.self) { item in
-                        NavigationLink(value: ProgramaticScreenCoordinator.Screen.detailView(item: item)) {
+                        NavigationLink(value: ProgrammaticScreenCoordinator.Screen.detailView(item: item)) {
                             Text(item)
                         }
                     }
@@ -25,7 +25,7 @@ struct ProgrammaticRootView: View {
                     HStack {
                         Text("Today items")
                         Spacer()
-                        NavigationLink(value: ProgramaticScreenCoordinator.Screen.itemList) {
+                        NavigationLink(value: ProgrammaticScreenCoordinator.Screen.itemList) {
                             Text("View All")
                                 .font(.footnote)
 
@@ -38,11 +38,11 @@ struct ProgrammaticRootView: View {
             .onReceive(AppDelegate.navigateToNotificationDestination) { destination in
                 guard let item = destination?.itemID else { return }
 
-                let newPath: [ProgramaticScreenCoordinator.Screen] = [.itemList, .detailView(item: item)]
+                let newPath: [ProgrammaticScreenCoordinator.Screen] = [.itemList, .detailView(item: item)]
                 navigationRouter.resetNavigation(with: newPath)
             }
-            .navigationDestination(for: ProgramaticScreenCoordinator.Screen.self) { destination in
-                ProgramaticScreenCoordinator().view(for: destination)
+            .navigationDestination(for: ProgrammaticScreenCoordinator.Screen.self) { destination in
+                ProgrammaticScreenCoordinator().view(for: destination)
                     .environmentObject(navigationRouter)
             }
         }

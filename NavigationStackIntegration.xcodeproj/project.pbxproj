@@ -32,7 +32,7 @@
 		97360DC62B5F1CC5002FC94B /* ProgrammaticRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97360DC52B5F1CC5002FC94B /* ProgrammaticRootView.swift */; };
 		97360DC82B5F1F11002FC94B /* ProgrammaticRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97360DC72B5F1F11002FC94B /* ProgrammaticRootViewModel.swift */; };
 		97DA77722B602679004549CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA77712B602679004549CF /* AppDelegate.swift */; };
-		97DA77752B605475004549CF /* ProgramaticScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA77742B605475004549CF /* ProgramaticScreenCoordinator.swift */; };
+		97DA77752B605475004549CF /* ProgrammaticScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA77742B605475004549CF /* ProgrammaticScreenCoordinator.swift */; };
 		97DA77772B6059E7004549CF /* ProgrammaticListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA77762B6059E7004549CF /* ProgrammaticListView.swift */; };
 		97DA77792B6059F5004549CF /* ProgrammaticListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA77782B6059F5004549CF /* ProgrammaticListViewModel.swift */; };
 		97DA777B2B605A98004549CF /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA777A2B605A98004549CF /* NavigationRouter.swift */; };
@@ -87,7 +87,7 @@
 		97360DC72B5F1F11002FC94B /* ProgrammaticRootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticRootViewModel.swift; sourceTree = "<group>"; };
 		97DA77712B602679004549CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97DA77732B604A52004549CF /* NavigationStackIntegration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavigationStackIntegration.entitlements; sourceTree = "<group>"; };
-		97DA77742B605475004549CF /* ProgramaticScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticScreenCoordinator.swift; sourceTree = "<group>"; };
+		97DA77742B605475004549CF /* ProgrammaticScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticScreenCoordinator.swift; sourceTree = "<group>"; };
 		97DA77762B6059E7004549CF /* ProgrammaticListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticListView.swift; sourceTree = "<group>"; };
 		97DA77782B6059F5004549CF /* ProgrammaticListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticListViewModel.swift; sourceTree = "<group>"; };
 		97DA777A2B605A98004549CF /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
@@ -248,7 +248,7 @@
 				97360DC42B5F1A97002FC94B /* ProgrammaticDetailView */,
 				97360DC32B5F1A7B002FC94B /* ProgrammaticListView */,
 				97360DC22B5F1A49002FC94B /* ProgrammaticRootView */,
-				97DA77742B605475004549CF /* ProgramaticScreenCoordinator.swift */,
+				97DA77742B605475004549CF /* ProgrammaticScreenCoordinator.swift */,
 				97DA777A2B605A98004549CF /* NavigationRouter.swift */,
 			);
 			path = ProgrammaticNavigation;
@@ -426,7 +426,7 @@
 				972BCFED2B14471C006B3B32 /* RootView.swift in Sources */,
 				972BCFC22B114459006B3B32 /* ContentView.swift in Sources */,
 				97DA777F2B606C7E004549CF /* ProgrammaticDetailViewModel.swift in Sources */,
-				97DA77752B605475004549CF /* ProgramaticScreenCoordinator.swift in Sources */,
+				97DA77752B605475004549CF /* ProgrammaticScreenCoordinator.swift in Sources */,
 				972BCFFA2B146007006B3B32 /* Screen2View.swift in Sources */,
 				97DA77772B6059E7004549CF /* ProgrammaticListView.swift in Sources */,
 				972BCFC02B114459006B3B32 /* NavigationStackIntegrationApp.swift in Sources */,

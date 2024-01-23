@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class ProgramaticScreenCoordinator {
+class ProgrammaticScreenCoordinator {
     enum Screen: Hashable {
         case rootView
         case itemList

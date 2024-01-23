@@ -14,7 +14,7 @@ struct ProgrammaticListView: View {
     var body: some View {
         List {
             ForEach(viewModel.exampleSentences, id: \.self) { item in
-                NavigationLink(value: ProgramaticScreenCoordinator.Screen.detailView(item: item)) {
+                NavigationLink(value: ProgrammaticScreenCoordinator.Screen.detailView(item: item)) {
                     Text(item)
                 }
             }

@@ -15,7 +15,7 @@ struct ProgrammaticDetailView: View {
         VStack {
             Text(viewModel.item)
             Text(viewModel.emojis.randomElement() ?? "🌈")
-            NavigationLink(value: ProgramaticScreenCoordinator.Screen.rootView) {
+            NavigationLink(value: ProgrammaticScreenCoordinator.Screen.rootView) {
                 Text("Return to root view with Navigation Link")
             }
             .buttonStyle(.bordered)
@@ -23,6 +23,7 @@ struct ProgrammaticDetailView: View {
                 router.resetNavigation(with: [])
             }
         }
+        .navigationTitle("Programmatic Detail View")
     }
 }
 
