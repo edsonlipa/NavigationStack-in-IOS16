@@ -31,6 +31,7 @@
 		97360DC02B5EE799002FC94B /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97360DBF2B5EE799002FC94B /* ViewCoordinator.swift */; };
 		97360DC62B5F1CC5002FC94B /* ProgrammaticRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97360DC52B5F1CC5002FC94B /* ProgrammaticRootView.swift */; };
 		97360DC82B5F1F11002FC94B /* ProgrammaticRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97360DC72B5F1F11002FC94B /* ProgrammaticRootViewModel.swift */; };
+		97DA77722B602679004549CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA77712B602679004549CF /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,14 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		972BCFBC2B114459006B3B32 /* NavigationCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		972BCFBC2B114459006B3B32 /* NavigationStackIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStackIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972BCFBF2B114459006B3B32 /* NavigationCoordinatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorApp.swift; sourceTree = "<group>"; };
 		972BCFC12B114459006B3B32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		972BCFC32B11445B006B3B32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		972BCFC52B11445B006B3B32 /* NavigationCoordinator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavigationCoordinator.entitlements; sourceTree = "<group>"; };
 		972BCFC72B11445B006B3B32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		972BCFCD2B11445B006B3B32 /* NavigationCoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationCoordinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		972BCFD72B11445B006B3B32 /* NavigationCoordinatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationCoordinatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		972BCFCD2B11445B006B3B32 /* NavigationStackIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationStackIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		972BCFD72B11445B006B3B32 /* NavigationStackIntegrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationStackIntegrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		972BCFEA2B114511006B3B32 /* ScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCoordinator.swift; sourceTree = "<group>"; };
 		972BCFEC2B14471C006B3B32 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		972BCFF22B14538D006B3B32 /* Screen1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1View.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		97360DBF2B5EE799002FC94B /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
 		97360DC52B5F1CC5002FC94B /* ProgrammaticRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticRootView.swift; sourceTree = "<group>"; };
 		97360DC72B5F1F11002FC94B /* ProgrammaticRootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticRootViewModel.swift; sourceTree = "<group>"; };
+		97DA77712B602679004549CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +119,9 @@
 		972BCFBD2B114459006B3B32 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				972BCFBC2B114459006B3B32 /* NavigationCoordinator.app */,
-				972BCFCD2B11445B006B3B32 /* NavigationCoordinatorTests.xctest */,
-				972BCFD72B11445B006B3B32 /* NavigationCoordinatorUITests.xctest */,
+				972BCFBC2B114459006B3B32 /* NavigationStackIntegration.app */,
+				972BCFCD2B11445B006B3B32 /* NavigationStackIntegrationTests.xctest */,
+				972BCFD72B11445B006B3B32 /* NavigationStackIntegrationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +133,7 @@
 				972BD0032B16279B006B3B32 /* WithoutScreenCoordinator */,
 				972BD0022B14E957006B3B32 /* ScreenCoordinator */,
 				972BCFBF2B114459006B3B32 /* NavigationCoordinatorApp.swift */,
+				97DA77712B602679004549CF /* AppDelegate.swift */,
 				972BCFC12B114459006B3B32 /* ContentView.swift */,
 				972BCFC32B11445B006B3B32 /* Assets.xcassets */,
 				972BCFC52B11445B006B3B32 /* NavigationCoordinator.entitlements */,
@@ -263,9 +266,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		972BCFBB2B114459006B3B32 /* NavigationCoordinator */ = {
+		972BCFBB2B114459006B3B32 /* NavigationStackIntegration */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 972BCFE12B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationCoordinator" */;
+			buildConfigurationList = 972BCFE12B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationStackIntegration" */;
 			buildPhases = (
 				972BCFB82B114459006B3B32 /* Sources */,
 				972BCFB92B114459006B3B32 /* Frameworks */,
@@ -275,16 +278,16 @@
 			);
 			dependencies = (
 			);
-			name = NavigationCoordinator;
+			name = NavigationStackIntegration;
 			packageProductDependencies = (
 			);
 			productName = NavigationCoordinator;
-			productReference = 972BCFBC2B114459006B3B32 /* NavigationCoordinator.app */;
+			productReference = 972BCFBC2B114459006B3B32 /* NavigationStackIntegration.app */;
 			productType = "com.apple.product-type.application";
 		};
-		972BCFCC2B11445B006B3B32 /* NavigationCoordinatorTests */ = {
+		972BCFCC2B11445B006B3B32 /* NavigationStackIntegrationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 972BCFE42B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationCoordinatorTests" */;
+			buildConfigurationList = 972BCFE42B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationStackIntegrationTests" */;
 			buildPhases = (
 				972BCFC92B11445B006B3B32 /* Sources */,
 				972BCFCA2B11445B006B3B32 /* Frameworks */,
@@ -295,14 +298,14 @@
 			dependencies = (
 				972BCFCF2B11445B006B3B32 /* PBXTargetDependency */,
 			);
-			name = NavigationCoordinatorTests;
+			name = NavigationStackIntegrationTests;
 			productName = NavigationCoordinatorTests;
-			productReference = 972BCFCD2B11445B006B3B32 /* NavigationCoordinatorTests.xctest */;
+			productReference = 972BCFCD2B11445B006B3B32 /* NavigationStackIntegrationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		972BCFD62B11445B006B3B32 /* NavigationCoordinatorUITests */ = {
+		972BCFD62B11445B006B3B32 /* NavigationStackIntegrationUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 972BCFE72B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationCoordinatorUITests" */;
+			buildConfigurationList = 972BCFE72B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationStackIntegrationUITests" */;
 			buildPhases = (
 				972BCFD32B11445B006B3B32 /* Sources */,
 				972BCFD42B11445B006B3B32 /* Frameworks */,
@@ -313,9 +316,9 @@
 			dependencies = (
 				972BCFD92B11445B006B3B32 /* PBXTargetDependency */,
 			);
-			name = NavigationCoordinatorUITests;
+			name = NavigationStackIntegrationUITests;
 			productName = NavigationCoordinatorUITests;
-			productReference = 972BCFD72B11445B006B3B32 /* NavigationCoordinatorUITests.xctest */;
+			productReference = 972BCFD72B11445B006B3B32 /* NavigationStackIntegrationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -341,7 +344,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 972BCFB72B114459006B3B32 /* Build configuration list for PBXProject "NavigationCoordinator" */;
+			buildConfigurationList = 972BCFB72B114459006B3B32 /* Build configuration list for PBXProject "NavigationStackIntegration" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -356,9 +359,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				972BCFBB2B114459006B3B32 /* NavigationCoordinator */,
-				972BCFCC2B11445B006B3B32 /* NavigationCoordinatorTests */,
-				972BCFD62B11445B006B3B32 /* NavigationCoordinatorUITests */,
+				972BCFBB2B114459006B3B32 /* NavigationStackIntegration */,
+				972BCFCC2B11445B006B3B32 /* NavigationStackIntegrationTests */,
+				972BCFD62B11445B006B3B32 /* NavigationStackIntegrationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -416,6 +419,7 @@
 				972BCFEB2B114511006B3B32 /* ScreenCoordinator.swift in Sources */,
 				97360DC02B5EE799002FC94B /* ViewCoordinator.swift in Sources */,
 				97360DC62B5F1CC5002FC94B /* ProgrammaticRootView.swift in Sources */,
+				97DA77722B602679004549CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,12 +442,12 @@
 /* Begin PBXTargetDependency section */
 		972BCFCF2B11445B006B3B32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 972BCFBB2B114459006B3B32 /* NavigationCoordinator */;
+			target = 972BCFBB2B114459006B3B32 /* NavigationStackIntegration */;
 			targetProxy = 972BCFCE2B11445B006B3B32 /* PBXContainerItemProxy */;
 		};
 		972BCFD92B11445B006B3B32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 972BCFBB2B114459006B3B32 /* NavigationCoordinator */;
+			target = 972BCFBB2B114459006B3B32 /* NavigationStackIntegration */;
 			targetProxy = 972BCFD82B11445B006B3B32 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -653,7 +657,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationCoordinator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NavigationCoordinator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationStackIntegration.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NavigationStackIntegration";
 			};
 			name = Debug;
 		};
@@ -675,7 +679,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationCoordinator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NavigationCoordinator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationStackIntegration.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NavigationStackIntegration";
 			};
 			name = Release;
 		};
@@ -724,7 +728,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		972BCFB72B114459006B3B32 /* Build configuration list for PBXProject "NavigationCoordinator" */ = {
+		972BCFB72B114459006B3B32 /* Build configuration list for PBXProject "NavigationStackIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				972BCFDF2B11445B006B3B32 /* Debug */,
@@ -733,7 +737,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		972BCFE12B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationCoordinator" */ = {
+		972BCFE12B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationStackIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				972BCFE22B11445B006B3B32 /* Debug */,
@@ -742,7 +746,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		972BCFE42B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationCoordinatorTests" */ = {
+		972BCFE42B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationStackIntegrationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				972BCFE52B11445B006B3B32 /* Debug */,
@@ -751,7 +755,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		972BCFE72B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationCoordinatorUITests" */ = {
+		972BCFE72B11445B006B3B32 /* Build configuration list for PBXNativeTarget "NavigationStackIntegrationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				972BCFE82B11445B006B3B32 /* Debug */,

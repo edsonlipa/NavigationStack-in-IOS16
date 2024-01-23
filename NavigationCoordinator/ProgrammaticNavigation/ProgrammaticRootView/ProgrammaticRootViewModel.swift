@@ -26,5 +26,4 @@ class ProgrammaticRootViewModel: ObservableObject {
         "Greatest architectural wonders of the modern world."
     ]
 
-    
 }

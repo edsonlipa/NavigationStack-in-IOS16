@@ -12,21 +12,18 @@ struct ProgrammaticRootView: View {
 
     var body: some View {
         NavigationStack {
-
-            Button("View all", action: {
-                print("navigate")
-            })
             List {
+                Button("View all", action: {
+                    print("navigate")
+                })
                 ForEach(viewModel.exampleSentences, id: \.self) { sentence in
                     Text(sentence)
                 }
             }
             .navigationTitle("Programmatic Root View")
-        }
+            .onReceive(AppDelegate.navigateToNotificationDestination) { destination in
 
+            }
+        }
     }
 }
-
-//#Preview {
-//    ProgrammaticRootView()
-//}
