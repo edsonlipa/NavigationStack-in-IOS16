@@ -12,14 +12,8 @@ struct AFirstView: View {
 
     @ObservedObject var viewModel: AFirstViewModel
     let coordinator: AFirstViewCoordinator
-    
-    @EnvironmentObject var router: Router
 
     var body: some View {
-        let sheetBinding = Binding<AFirstViewCoordinator.Destination?>(
-                    get: { [weak viewModel = self.viewModel] in viewModel?.presentedItem },
-                    set: { [weak viewModel = self.viewModel] in viewModel?.presentedItem = $0 }
-                )
         VStack {
             NavigationLink(value: AFirstViewCoordinator.Destination.secondView) {
                 Text("Go to Second View")
@@ -29,17 +23,16 @@ struct AFirstView: View {
                     viewModel.presentedItem = .thirdView
                 }
             Button("display navigation path counter") {
-                print("first view \(router.navigationPath.count)")
+                print("first view ")
             }
 
         }
         .navigationTitle("First View")
         .navigationDestination(for: DestinationValue.self) { [weak coordinator = self.coordinator]  destination in
            coordinator?.view(for: destination)
-                .environmentObject(router)
         }
-        .sheet(item: sheetBinding) { [weak coordinator = self.coordinator]  item in
-            coordinator?.view(for: item)
+        .sheet(item: $viewModel.presentedItem) { item in
+            coordinator.view(for: item)
         }
     }
 }

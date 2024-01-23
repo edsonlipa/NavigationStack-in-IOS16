@@ -11,7 +11,6 @@ struct ASecondView: View {
     @ObservedObject var viewModel: ASecondViewModel
     let coordinator: ASecondViewCoordinator
     
-    @EnvironmentObject var router: Router
 
     var body: some View {
         VStack {
@@ -23,10 +22,6 @@ struct ASecondView: View {
 
         }
         .navigationTitle("Second View")
-        .onReceive(viewModel.backToRootView) { _ in
-            print("navigationPath count \(router.navigationPath.count)")
 
-            router.navigationPath.removeLast(router.navigationPath.count)
-        }
     }
 }

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUIAdditions
 import SwiftUI
 
 struct User: Hashable {
@@ -89,7 +88,6 @@ extension ScreenCoordinator: Navigator {
     func navigate(to screen: any DestinationView) {
         navigationPath.append(screen)
     }
-    
 
     func backToRootView() {
         navigationPath = NavigationPath()

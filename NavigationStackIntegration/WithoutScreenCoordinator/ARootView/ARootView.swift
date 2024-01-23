@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-class Router: ObservableObject {
-    @Published
-    var navigationPath = NavigationPath() {
-        didSet {
-            print("Router navigationPath size \(navigationPath.count)")
-        }
-    }
-}
 
 struct ARootView: View {
     fileprivate typealias Destination = ARootViewCoordinator.Destination

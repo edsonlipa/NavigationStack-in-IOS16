@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/edsonlipa/Source Reference/NavigationCoordinator/NavigationStackIntegration.xcodeproj">
+      location = "self:../NavigationStackIntegration">
    </FileRef>
 </Workspace>

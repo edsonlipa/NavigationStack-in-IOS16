@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import SwiftUIAdditions
 
 class ASecondViewCoordinator: ViewCoordinator {
     var viewModel: ASecondViewModel

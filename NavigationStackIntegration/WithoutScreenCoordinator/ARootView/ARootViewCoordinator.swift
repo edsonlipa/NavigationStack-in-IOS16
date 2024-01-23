@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUIAdditions
 import SwiftUI
 
 class ARootViewCoordinator: ViewCoordinator {

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		972BCFC02B114459006B3B32 /* NavigationCoordinatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972BCFBF2B114459006B3B32 /* NavigationCoordinatorApp.swift */; };
+		972BCFC02B114459006B3B32 /* NavigationStackIntegrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972BCFBF2B114459006B3B32 /* NavigationStackIntegrationApp.swift */; };
 		972BCFC22B114459006B3B32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972BCFC12B114459006B3B32 /* ContentView.swift */; };
 		972BCFC42B11445B006B3B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972BCFC32B11445B006B3B32 /* Assets.xcassets */; };
 		972BCFC82B11445B006B3B32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972BCFC72B11445B006B3B32 /* Preview Assets.xcassets */; };
@@ -32,6 +32,12 @@
 		97360DC62B5F1CC5002FC94B /* ProgrammaticRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97360DC52B5F1CC5002FC94B /* ProgrammaticRootView.swift */; };
 		97360DC82B5F1F11002FC94B /* ProgrammaticRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97360DC72B5F1F11002FC94B /* ProgrammaticRootViewModel.swift */; };
 		97DA77722B602679004549CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA77712B602679004549CF /* AppDelegate.swift */; };
+		97DA77752B605475004549CF /* ProgramaticScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA77742B605475004549CF /* ProgramaticScreenCoordinator.swift */; };
+		97DA77772B6059E7004549CF /* ProgrammaticListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA77762B6059E7004549CF /* ProgrammaticListView.swift */; };
+		97DA77792B6059F5004549CF /* ProgrammaticListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA77782B6059F5004549CF /* ProgrammaticListViewModel.swift */; };
+		97DA777B2B605A98004549CF /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA777A2B605A98004549CF /* NavigationRouter.swift */; };
+		97DA777D2B606C76004549CF /* ProgrammaticDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA777C2B606C76004549CF /* ProgrammaticDetailView.swift */; };
+		97DA777F2B606C7E004549CF /* ProgrammaticDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA777E2B606C7E004549CF /* ProgrammaticDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +59,9 @@
 
 /* Begin PBXFileReference section */
 		972BCFBC2B114459006B3B32 /* NavigationStackIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStackIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		972BCFBF2B114459006B3B32 /* NavigationCoordinatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorApp.swift; sourceTree = "<group>"; };
+		972BCFBF2B114459006B3B32 /* NavigationStackIntegrationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackIntegrationApp.swift; sourceTree = "<group>"; };
 		972BCFC12B114459006B3B32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		972BCFC32B11445B006B3B32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		972BCFC52B11445B006B3B32 /* NavigationCoordinator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavigationCoordinator.entitlements; sourceTree = "<group>"; };
 		972BCFC72B11445B006B3B32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		972BCFCD2B11445B006B3B32 /* NavigationStackIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationStackIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		972BCFD72B11445B006B3B32 /* NavigationStackIntegrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationStackIntegrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +86,13 @@
 		97360DC52B5F1CC5002FC94B /* ProgrammaticRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticRootView.swift; sourceTree = "<group>"; };
 		97360DC72B5F1F11002FC94B /* ProgrammaticRootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticRootViewModel.swift; sourceTree = "<group>"; };
 		97DA77712B602679004549CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97DA77732B604A52004549CF /* NavigationStackIntegration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavigationStackIntegration.entitlements; sourceTree = "<group>"; };
+		97DA77742B605475004549CF /* ProgramaticScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticScreenCoordinator.swift; sourceTree = "<group>"; };
+		97DA77762B6059E7004549CF /* ProgrammaticListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticListView.swift; sourceTree = "<group>"; };
+		97DA77782B6059F5004549CF /* ProgrammaticListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticListViewModel.swift; sourceTree = "<group>"; };
+		97DA777A2B605A98004549CF /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		97DA777C2B606C76004549CF /* ProgrammaticDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticDetailView.swift; sourceTree = "<group>"; };
+		97DA777E2B606C7E004549CF /* ProgrammaticDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,14 +141,15 @@
 		972BCFBE2B114459006B3B32 /* NavigationStackIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				97360DBF2B5EE799002FC94B /* ViewCoordinator.swift */,
 				97360DC12B5F1A1A002FC94B /* ProgrammaticNavigation */,
 				972BD0032B16279B006B3B32 /* WithoutScreenCoordinator */,
 				972BD0022B14E957006B3B32 /* ScreenCoordinator */,
-				972BCFBF2B114459006B3B32 /* NavigationCoordinatorApp.swift */,
+				972BCFBF2B114459006B3B32 /* NavigationStackIntegrationApp.swift */,
 				97DA77712B602679004549CF /* AppDelegate.swift */,
 				972BCFC12B114459006B3B32 /* ContentView.swift */,
 				972BCFC32B11445B006B3B32 /* Assets.xcassets */,
-				972BCFC52B11445B006B3B32 /* NavigationCoordinator.entitlements */,
+				97DA77732B604A52004549CF /* NavigationStackIntegration.entitlements */,
 				972BCFC62B11445B006B3B32 /* Preview Content */,
 			);
 			path = NavigationStackIntegration;
@@ -195,7 +208,6 @@
 				972BD00F2B164054006B3B32 /* ASecondView */,
 				972BD00C2B16400B006B3B32 /* AFirstView */,
 				972BD0092B163FDD006B3B32 /* ARootView */,
-				97360DBF2B5EE799002FC94B /* ViewCoordinator.swift */,
 			);
 			path = WithoutScreenCoordinator;
 			sourceTree = "<group>";
@@ -236,6 +248,8 @@
 				97360DC42B5F1A97002FC94B /* ProgrammaticDetailView */,
 				97360DC32B5F1A7B002FC94B /* ProgrammaticListView */,
 				97360DC22B5F1A49002FC94B /* ProgrammaticRootView */,
+				97DA77742B605475004549CF /* ProgramaticScreenCoordinator.swift */,
+				97DA777A2B605A98004549CF /* NavigationRouter.swift */,
 			);
 			path = ProgrammaticNavigation;
 			sourceTree = "<group>";
@@ -252,6 +266,8 @@
 		97360DC32B5F1A7B002FC94B /* ProgrammaticListView */ = {
 			isa = PBXGroup;
 			children = (
+				97DA77762B6059E7004549CF /* ProgrammaticListView.swift */,
+				97DA77782B6059F5004549CF /* ProgrammaticListViewModel.swift */,
 			);
 			path = ProgrammaticListView;
 			sourceTree = "<group>";
@@ -259,6 +275,8 @@
 		97360DC42B5F1A97002FC94B /* ProgrammaticDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				97DA777C2B606C76004549CF /* ProgrammaticDetailView.swift */,
+				97DA777E2B606C7E004549CF /* ProgrammaticDetailViewModel.swift */,
 			);
 			path = ProgrammaticDetailView;
 			sourceTree = "<group>";
@@ -407,19 +425,25 @@
 				972BD0112B164075006B3B32 /* AFirstViewModel.swift in Sources */,
 				972BCFED2B14471C006B3B32 /* RootView.swift in Sources */,
 				972BCFC22B114459006B3B32 /* ContentView.swift in Sources */,
+				97DA777F2B606C7E004549CF /* ProgrammaticDetailViewModel.swift in Sources */,
+				97DA77752B605475004549CF /* ProgramaticScreenCoordinator.swift in Sources */,
 				972BCFFA2B146007006B3B32 /* Screen2View.swift in Sources */,
-				972BCFC02B114459006B3B32 /* NavigationCoordinatorApp.swift in Sources */,
+				97DA77772B6059E7004549CF /* ProgrammaticListView.swift in Sources */,
+				972BCFC02B114459006B3B32 /* NavigationStackIntegrationApp.swift in Sources */,
 				972BD0192B17A662006B3B32 /* ASecondView.swift in Sources */,
+				97DA777D2B606C76004549CF /* ProgrammaticDetailView.swift in Sources */,
 				972BCFF32B14538D006B3B32 /* Screen1View.swift in Sources */,
 				972BCFF52B14539B006B3B32 /* Screen1ViewModel.swift in Sources */,
 				972BCFF82B145FEA006B3B32 /* Screen2ViewModel.swift in Sources */,
 				97360DC82B5F1F11002FC94B /* ProgrammaticRootViewModel.swift in Sources */,
 				972BD0172B17A5EF006B3B32 /* ASecondViewCoordinator.swift in Sources */,
+				97DA77792B6059F5004549CF /* ProgrammaticListViewModel.swift in Sources */,
 				972BD0082B163FBE006B3B32 /* ARootViewModel.swift in Sources */,
 				972BCFEB2B114511006B3B32 /* ScreenCoordinator.swift in Sources */,
 				97360DC02B5EE799002FC94B /* ViewCoordinator.swift in Sources */,
 				97360DC62B5F1CC5002FC94B /* ProgrammaticRootView.swift in Sources */,
 				97DA77722B602679004549CF /* AppDelegate.swift in Sources */,
+				97DA777B2B605A98004549CF /* NavigationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,10 +596,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = NavigationCoordinator/NavigationCoordinator.entitlements;
+				CODE_SIGN_ENTITLEMENTS = NavigationStackIntegration/NavigationStackIntegration.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NavigationCoordinator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -608,10 +632,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = NavigationCoordinator/NavigationCoordinator.entitlements;
+				CODE_SIGN_ENTITLEMENTS = NavigationStackIntegration/NavigationStackIntegration.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NavigationCoordinator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

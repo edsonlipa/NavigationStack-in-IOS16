@@ -1,6 +1,6 @@
 //
-//  NavigationCoordinatorApp.swift
-//  NavigationCoordinator
+//  NavigationStackIntegrationApp.swift
+//  NavigationStackIntegration
 //
 //  Created by Edson Lipa on 11/24/23.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct NavigationCoordinatorApp: App {
+struct NavigationStackIntegrationApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
