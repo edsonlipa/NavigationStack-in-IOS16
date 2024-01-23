@@ -111,7 +111,7 @@
 		972BCFB32B114459006B3B32 = {
 			isa = PBXGroup;
 			children = (
-				972BCFBE2B114459006B3B32 /* NavigationCoordinator */,
+				972BCFBE2B114459006B3B32 /* NavigationStackIntegration */,
 				972BCFBD2B114459006B3B32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		972BCFBE2B114459006B3B32 /* NavigationCoordinator */ = {
+		972BCFBE2B114459006B3B32 /* NavigationStackIntegration */ = {
 			isa = PBXGroup;
 			children = (
 				97360DC12B5F1A1A002FC94B /* ProgrammaticNavigation */,
@@ -139,7 +139,7 @@
 				972BCFC52B11445B006B3B32 /* NavigationCoordinator.entitlements */,
 				972BCFC62B11445B006B3B32 /* Preview Content */,
 			);
-			path = NavigationCoordinator;
+			path = NavigationStackIntegration;
 			sourceTree = "<group>";
 		};
 		972BCFC62B11445B006B3B32 /* Preview Content */ = {
