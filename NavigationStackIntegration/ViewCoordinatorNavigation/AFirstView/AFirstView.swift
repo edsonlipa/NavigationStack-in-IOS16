@@ -18,13 +18,14 @@ struct AFirstView: View {
             NavigationLink(value: AFirstViewCoordinator.Destination.secondView) {
                 Text("Go to Second View")
             }
+            .buttonStyle(.borderedProminent)
+
             Text("open a sheet")
                 .onTapGesture {
                     viewModel.presentedItem = .thirdView
                 }
-            Button("display navigation path counter") {
-                print("first view ")
-            }
+            
+
 
         }
         .navigationTitle("First View")

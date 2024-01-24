@@ -12,15 +12,15 @@ struct ContentView: View {
         TabView {
             RootViewWithScreenCoordinator
                 .tabItem {
-                    Label("example 1", systemImage: "arrow.up.heart")
+                    Label("Screen Coordinator", systemImage: "arrow.up.heart")
                 }
             RootViewWithRouter
                 .tabItem {
-                    Label("example 2", systemImage: "arrow.up.message")
+                    Label("View Coordinator", systemImage: "arrow.up.message")
                 }
             ProgrammaticNavigation
                 .tabItem {
-                    Label("example 3", systemImage: "arrow.up.square")
+                    Label("Router Navigation", systemImage: "arrow.up.square")
                 }
         }
 

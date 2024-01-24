@@ -12,8 +12,7 @@ struct ARootView: View {
     fileprivate typealias Destination = ARootViewCoordinator.Destination
     
     @ObservedObject var viewModel: ARootViewModel
-//    @StateObject var router = Router()
-    
+
     let coordinator: ARootViewCoordinator
     
     var body: some View {
@@ -23,13 +22,14 @@ struct ARootView: View {
                 NavigationLink(value: Destination.AFirstView) {
                     Text("Go to First View")
                 }
+                .buttonStyle(.borderedProminent)
+
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.cyan)
             .navigationTitle("A Root View")
             .navigationDestination(for: Destination.self) { destination in
                 coordinator.view(for: destination)
-//                    .environmentObject(router)
             }
         }
     }

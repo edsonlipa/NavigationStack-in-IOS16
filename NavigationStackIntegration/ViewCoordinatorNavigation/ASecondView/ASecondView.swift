@@ -15,10 +15,10 @@ struct ASecondView: View {
     var body: some View {
         VStack {
             Text("Second View")
-            Button("Do something and then go back to the root") {
-                viewModel.doSomethingAndBackToRoot()
-            }
-            .buttonStyle(.borderedProminent)
+//            Button("Do something and then go back to the root") {
+////                viewModel.doSomethingAndBackToRoot()
+//            }
+//            .buttonStyle(.borderedProminent)
 
         }
         .navigationTitle("Second View")
