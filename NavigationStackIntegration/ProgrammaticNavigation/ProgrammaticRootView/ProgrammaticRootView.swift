@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct ProgrammaticRootView: View {
+    let screenCoordinator = ProgrammaticScreenCoordinator()
     @ObservedObject var viewModel: ProgrammaticRootViewModel
     @StateObject var navigationRouter = NavigationRouter()
 
@@ -32,6 +33,12 @@ struct ProgrammaticRootView: View {
                         }
                     }
                 })
+
+                Button("navigate to 3 levels") {
+                    let newPath: [ProgrammaticScreenCoordinator.Screen] = [.detailView(item: "item 1"), .itemList, .detailView(item: "item 2")]
+                    navigationRouter.resetNavigation(with: newPath)
+                }
+                .buttonStyle(.borderedProminent)
             }
 
             .navigationTitle("Programmatic Root View")
@@ -42,7 +49,7 @@ struct ProgrammaticRootView: View {
                 navigationRouter.resetNavigation(with: newPath)
             }
             .navigationDestination(for: ProgrammaticScreenCoordinator.Screen.self) { destination in
-                ProgrammaticScreenCoordinator().view(for: destination)
+                screenCoordinator.view(for: destination)
                     .environmentObject(navigationRouter)
             }
         }

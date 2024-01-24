@@ -143,8 +143,8 @@
 			children = (
 				97360DBF2B5EE799002FC94B /* ViewCoordinator.swift */,
 				97360DC12B5F1A1A002FC94B /* ProgrammaticNavigation */,
-				972BD0032B16279B006B3B32 /* WithoutScreenCoordinator */,
-				972BD0022B14E957006B3B32 /* ScreenCoordinator */,
+				972BD0032B16279B006B3B32 /* ViewCoordinatorNavigation */,
+				972BD0022B14E957006B3B32 /* ScreenCoordinatorNavigation */,
 				972BCFBF2B114459006B3B32 /* NavigationStackIntegrationApp.swift */,
 				97DA77712B602679004549CF /* AppDelegate.swift */,
 				972BCFC12B114459006B3B32 /* ContentView.swift */,
@@ -190,7 +190,7 @@
 			path = Screen3View;
 			sourceTree = "<group>";
 		};
-		972BD0022B14E957006B3B32 /* ScreenCoordinator */ = {
+		972BD0022B14E957006B3B32 /* ScreenCoordinatorNavigation */ = {
 			isa = PBXGroup;
 			children = (
 				972BCFFB2B14DE30006B3B32 /* Screen3View */,
@@ -199,17 +199,17 @@
 				972BCFEC2B14471C006B3B32 /* RootView.swift */,
 				972BCFEA2B114511006B3B32 /* ScreenCoordinator.swift */,
 			);
-			path = ScreenCoordinator;
+			path = ScreenCoordinatorNavigation;
 			sourceTree = "<group>";
 		};
-		972BD0032B16279B006B3B32 /* WithoutScreenCoordinator */ = {
+		972BD0032B16279B006B3B32 /* ViewCoordinatorNavigation */ = {
 			isa = PBXGroup;
 			children = (
 				972BD00F2B164054006B3B32 /* ASecondView */,
 				972BD00C2B16400B006B3B32 /* AFirstView */,
 				972BD0092B163FDD006B3B32 /* ARootView */,
 			);
-			path = WithoutScreenCoordinator;
+			path = ViewCoordinatorNavigation;
 			sourceTree = "<group>";
 		};
 		972BD0092B163FDD006B3B32 /* ARootView */ = {

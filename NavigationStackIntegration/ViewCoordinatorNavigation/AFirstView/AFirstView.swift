@@ -28,8 +28,8 @@ struct AFirstView: View {
 
         }
         .navigationTitle("First View")
-        .navigationDestination(for: DestinationValue.self) { [weak coordinator = self.coordinator]  destination in
-           coordinator?.view(for: destination)
+        .navigationDestination(for: DestinationValue.self) { destination in
+           coordinator.view(for: destination)
         }
         .sheet(item: $viewModel.presentedItem) { item in
             coordinator.view(for: item)

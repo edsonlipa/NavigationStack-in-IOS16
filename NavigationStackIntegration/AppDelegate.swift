@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         content.title = "Reminder"
         content.body = "Don't forget to check the new updates."
         content.sound = UNNotificationSound.default
-        content.threadIdentifier = "hl34dc9k"
+        content.threadIdentifier = "item from notification"
 
         // Trigger in 5 seconds
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
